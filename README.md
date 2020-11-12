@@ -49,6 +49,10 @@ If you don't know what are hidden files.They are file which have name starting w
 
 If it works then merge the branch with the master branch.
 
+Let's add support for commandline arguments.This is done by the argparse module in python.
+Make separate file for parsing the arguments.For now we will only support '--all' flag.
+Again for the same create a separate branch or it.
+
 
 
 
