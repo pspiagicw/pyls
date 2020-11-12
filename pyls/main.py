@@ -12,6 +12,7 @@ def generate_output() -> list:
     return os.listdir('.')
 def print_output(output_list:list):
     for node in output_list:
-        print(node)
+        if not node.startswith('.'):
+            print(node)
     
     
