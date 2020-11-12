@@ -4,6 +4,7 @@ We will make a ls clone in python.
 If you don't know what is ls.
 Just google it.If you are on windows 
 the similar command is dir.
+We are naming it pyls
 
 
 ## Approach
@@ -69,6 +70,23 @@ The above point is quite easy.
 But the next idea is not so easy.
 We are going to build the '--long' argument which means we have to get stats of each and every file.
 This stats include read/write/execute permissions and even last-modified-date.
+
+Again use git branches.
+
+This was a big one.For a hint you can work with os.path and os.stat along with stat module for getting information about the file)
+I think this is enough for using on a daily basis.
+
+## Extensions
+If you are up to the task.You can write multiple extensions to pyls
+
+ - Color support: You can have color support for pyls.
+ - More Options: Just look at man ls and try to implement things that you think you can do.
+ - Recursive: This is one which requires recursion which is a little higher concept for beginners.(Just Google It)
+Think of more extensions and implement them.
+Give your feedback and give your opinions on my writing.You feedback is appreciated.
+Send me your code and we will discuss them.
+Send me ideas for future posts share links to such posts on the internet.
+
 
 
 
