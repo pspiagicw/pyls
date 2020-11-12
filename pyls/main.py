@@ -8,13 +8,13 @@ def main():
     args = arguments.parse_arguments()
     # Configure Arguments and set corresponding variables
     output = generate_output(args.directory)
-    print_output(output)
+    print_output(output,True if args.all else False)
 
 def generate_output(directory:str) -> list:
     return os.listdir(directory)
-def print_output(output_list:list):
+def print_output(output_list:list,hidden:bool=False):
     for node in output_list:
-        if not node.startswith('.'):
+        if not node.startswith('.') or hidden:
             print(node)
     
     
