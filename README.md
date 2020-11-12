@@ -50,8 +50,25 @@ If you don't know what are hidden files.They are file which have name starting w
 If it works then merge the branch with the master branch.
 
 Let's add support for commandline arguments.This is done by the argparse module in python.
-Make separate file for parsing the arguments.For now we will only support '--all' flag.
+Make separate file for parsing the arguments.For now we will only support directory name.
 Again for the same create a separate branch or it.
+
+I should explain this point.What I mean by directory name.With that I mean that when 'pyls' is run without any arguments.
+Then it should print current directory's contents.But when given given a directory name which is in the current directory.
+It should print that directory's contents.
+
+If it works then again merge the branch with the master branch.
+One thing I would like to touch is the use of docstrings in each and every function.
+This is a very weird thing to do.But I am trying to write good code and thus I am following it too.
+
+The next idea I think we should tacke is the '--all' argument which prints the hidden files too.
+Again for this we should create a separate branch and thus merge after working.
+
+The above point is quite easy.
+
+But the next idea is not so easy.
+We are going to build the '--long' argument which means we have to get stats of each and every file.
+This stats include read/write/execute permissions and even last-modified-date.
 
 
 
